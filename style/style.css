@@ -4,16 +4,50 @@ body 		{background-color:		#F5F5F5;
 			margin-bottom:			10px;
 			margin-left:			70px;
 			}
-#WC			{float:					left;
+h1	 		{color : green;
+			font-family: 			Georgia, serif; 
+			font-style: 			normal;
+			font-variant: 			small-caps; 
+			font-weight: 			bold; 
+			text-align: 			center;
+			font-size: 				1.5em;
+			letter-spacing: 		0.1em;
+
 			}
-#WCC		{margin-top:			-7px;
-			float:					left;
+h2 			{font-family: 			Garamond, serif; 
+			font-style: 			oblique; 
+			font-variant: 			normal; 
+			font-weight: 			normal; 
+			font-size: 				1em;
+			text-align: 			center;
+			text-decoration:		overline;
 			}
-#nt 		{font-family: 			Arial;
+h3 			{font-family: 			Georgia, serif; 
+			font-size: 				1em;
+			text-align: 			justify;
+			font-weight: 			normal;
+			}	
+p 			{font-family: 			Georgia, serif; 
+			font-size: 				1em;
+			text-align: 			justify;
+			height: 				10px;
+			}
+a:link		{color: 				blue;
+			}
+a:visited	{color: 				#8A2BE2;
+			}
+a:hover		{color: 				#483D8B;
+			}
+a:active	{color: 				red;
+			}	
+
+
+	#nt 		{margin-top: 			0px;
+			font-family: 			Arial;
 			font-style: 			italic; 
 			float:					left;
 			}
-#np 		{margin-top: 			12px;
+#np 		{margin-top: 			-50px;
 			margin-left: 			7px;
 			border-style: 			solid;
 			border-color: 			black;
@@ -49,42 +83,4 @@ body 		{background-color:		#F5F5F5;
 			width: 					144px;
 			height: 				40px;
 			}
-h1	 		{font-family: 			Georgia, serif; 
-			font-style: 			normal;
-			font-variant: 			small-caps; 
-			font-weight: 			bold; 
-			text-align: 			center;
-			font-size: 				1.5em;
-			letter-spacing: 		0.1em;
-			}
-h2 			{font-family: 			Garamond, serif; 
-			font-style: 			oblique; 
-			font-variant: 			normal; 
-			font-weight: 			normal; 
-			font-size: 				1em;
-			text-align: 			center;
-			text-decoration:		overline;
-			}
-h3 			{font-family: 			Georgia, serif; 
-			font-size: 				1em;
-			text-align: 			justify;
-			height: 				10px;
-			font-weight: 			normal;
-			}	
-p 			{font-family: 			Georgia, serif; 
-			font-size: 				1em;
-			text-align: 			justify;
-			height: 				10px;
-			}
-a:link		{color: 				blue;
-			}
-a:visited	{color: 				#8A2BE2;
-			}
-a:hover		{color: 				#483D8B;
-			}
-a:active	{color: 				red;
-			}	
-
-
-	
 
