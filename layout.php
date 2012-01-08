@@ -1,12 +1,12 @@
 <?php
 $file = 'r.tmp';
 //удаляем лишние пробелы из начала и конца сообщения
-$name = ltrim(rtrim($_GET['name']));
+$name = ltrim(rtrim($_POST['name']));
 //удаляем лишние пробелы из начала и конца сообщения 
-$msg = ltrim(rtrim($_GET['msg']));
-$clear_button = $_GET['clear'];
-$add_button = $_GET['addmsg'];
-$psswrd = $_GET['psswrd'];
+$msg = ltrim(rtrim($_POST['msg']));
+$clear_button = $_POST['clear'];
+$add_button = $_POST['addmsg'];
+$psswrd = $_POST['psswrd'];
 $dat = Date("d-F-20y");
 $tm = Date("h:i:s");
 //очистка истории
