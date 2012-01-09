@@ -39,19 +39,22 @@
 	<a href= "index.php"><h1>Добро пожаловать в гостевую книгу</h1></a>
 	<h2>Сегодня <? echo $dat ?> года. Время на Ваших часах <? echo $tm ?>.</h2>
 	<hr />
-	<textarea name = "text" rows = "20" cols = "170"><? echo "$ct" ?></textarea>
-	<hr/>
+	<p>
+	<textarea id = "txt" name = "text" rows = "10" cols = "100"><? echo "$ct" ?></textarea>
+	</p>
+	<hr />
 	<form action = "layout.php" method = "POST" name = "DataForm"> 
-		<h3 id = "nt">Введите Ваше <b>Имя:</b></h3>
-		<input id = "np" maxlength = "20" size = "16" name = "name" value = "Имя пользователя"> 
-		<h3 id = "msgt">Введите Ваше <b>сообщение:</b></h3>
-	  <textarea id = "msgp" name = "msg" wrap = "virtual" cols = "170" rows = "3">Текст сообщения...</textarea>
-	  <br>
-	  <input id = "sbtn" value = "Send" type = "submit" name = "addmsg">
+		<p id = "nt">Введите Ваше <b>Имя:</b><br>
+		<input id = "np" maxlength = "20" size = "20" name = "name" value = "Имя пользователя"><br>
+		Введите Ваше <b>сообщение:</b><br>
+		<textarea id = "msgp" name = "msg" wrap = "virtual" cols = "100" rows = "2">Текст сообщения...</textarea><br>
+		<input id = "sbtn" value = "Send" type = "submit" name = "addmsg"></p>
 	</form>
+	<hr/>
 	<form action = "layout.php" method = "POST" name = "ClearForm"> 
-		<input id = "chbtn" value = "Clear History" type = "submit" name = "clear">
-		<input type = "password" maxlength = "128" size = "16" name = "psswrd" value = "php">
+		<p><input id = "chbtn" value = "Clear History" type = "submit" name = "clear">
+		Пароль: 
+		<input type = "password" maxlength = "128" size = "20" name = "psswrd" value = "php"></p>
 	</form>
 	<h5>Maded by Shaman</h5>
 	</body>

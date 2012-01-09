@@ -1,86 +1,121 @@
-body 		{background-color:		#F5F5F5;
-			margin-top:				10px;
-			margin-right:			40px;
-			margin-bottom:			10px;
-			margin-left:			70px;
-			}
-h1	 		{color : green;
-			font-family: 			Georgia, serif; 
-			font-style: 			normal;
-			font-variant: 			small-caps; 
-			font-weight: 			bold; 
-			text-align: 			center;
-			font-size: 				1.5em;
-			letter-spacing: 		0.1em;
-
-			}
-h2 			{font-family: 			Garamond, serif; 
-			font-style: 			oblique; 
-			font-variant: 			normal; 
-			font-weight: 			normal; 
-			font-size: 				1em;
-			text-align: 			center;
-			text-decoration:		overline;
-			}
-h3 			{font-family: 			Georgia, serif; 
-			font-size: 				1em;
-			text-align: 			justify;
-			font-weight: 			normal;
-			}	
-p 			{font-family: 			Georgia, serif; 
-			font-size: 				1em;
-			text-align: 			justify;
-			height: 				10px;
-			}
-a:link		{color: 				blue;
-			}
-a:visited	{color: 				#8A2BE2;
-			}
-a:hover		{color: 				#483D8B;
-			}
-a:active	{color: 				red;
-			}	
-
-
-	#nt 		{margin-top: 			0px;
-			font-family: 			Arial;
-			font-style: 			italic; 
-			float:					left;
-			}
-#np 		{margin-top: 			-50px;
-			margin-left: 			7px;
-			border-style: 			solid;
-			border-color: 			black;
-			border-width: 			1px;
-			}
-#msgt	 	{font-family: 			Arial;
-			font-style: 			italic; 
-			margin-top: 			-5px;
-			clear: 					both;
-			}
-#msgp	 	{margin-top: 			-5px;
-			border-style: 			solid;
-			border-color: 			black;
-			border-width: 			1px;
-			}
-#sbtn	 	{font-family: 			Arial;
-			font-weight: 			bold; 
-			margin-top: 			2px;
-			margin-right: 			10px;
-			color: 					#BEBEBE;
-			background-color: 		green;
-			font-size: 				1.25em;
-			width: 					144px;
-			height: 				40px;
-			float: 					left;
-			}
-#chbtn	 	{font-family: 			Arial;
-			font-weight: 			bold; 
-			margin-top: 			2px;
-			color: 					#BEBEBE;
-			background-color: 		red;
-			font-size: 				1.25em;
-			width: 					144px;
-			height: 				40px;
-			}
-
+body
+	{
+	background-color : #F5F5F5;
+	margin-top : 10px;
+	margin-right : 40px;
+	margin-bottom : 10px;
+	margin-left : 70px;
+	}
+h1
+	{
+	color : green;
+	margin-bottom : -12px;
+	font-family : Georgia, serif; 
+	font-style : normal;
+	font-variant : small-caps; 
+	font-weight : bold; 
+	text-align : center;
+	font-size : 1.5em;
+	letter-spacing : 0.05em;
+	}
+h2
+	{
+	font-family : Garamond, serif; 
+	font-style : oblique; 
+	font-variant : normal; 
+	font-weight : normal; 
+	font-size : 1em;
+	text-align : center;
+	text-decoration : overline;
+	}
+h3
+	{font-family : Georgia, serif; 
+	font-size : 1em;
+	text-align : justify;
+	font-weight : normal;
+	font-style : italic; 
+	}
+h5
+	{
+	font-family : Georgia, serif; 
+	text-align : center;
+	font-size : 0.8em;
+	text-decoration : overline;
+	margin-top : -5px
+	}
+p
+	{
+	font-family : Georgia, serif; 
+	font-size : 1em;
+	text-align : justify;
+	text-align : center;
+	}
+a : link
+	{
+	color : blue;
+	}
+a : visited
+	{
+	color : #8A2BE2;
+	}
+a : hover
+	{
+	color : #483D8B;
+	}
+a : active
+	{
+	color : red;
+	}	
+#nt
+	{
+	margin-top : 0px;
+	font-family : Arial;
+	}
+#np
+	{
+	margin-top : 5px;
+	margin-bottom : 15px;
+	border-style : solid;
+	border-color : black;
+	border-width : 1px;
+	font-size : 1em;
+	font-family : Georgia, serif; 
+	}
+#msgp
+ 	{
+ 	margin-top : 5px;
+	border-style : solid;
+	border-color : black;
+	border-width : 1px;
+	font-size : 1em;
+	font-family : Georgia, serif; 
+	}
+#sbtn
+ 	{
+ 	font-family : Arial;
+	font-weight : bold; 
+	margin-top : 5px;
+	margin-bottom : -5px;
+	color : #BEBEBE;
+	background-color : green;
+	font-size : 1.25em;
+	width : 144px;
+	height : 40px;
+	}
+#chbtn
+	{
+	font-family : Arial;
+	font-weight : bold; 
+	margin-top : -10px;
+	margin-bottom : -10px;
+	color : #BEBEBE;
+	background-color : red;
+	font-size : 1.25em;
+	width : 144px;
+	height : 40px;
+	}
+#txt
+	
+	{
+		font-family : Georgia, serif; 
+	}
