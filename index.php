@@ -3,6 +3,7 @@
 	header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT"); // always modified
 	header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
 	header("Pragma: no-cache"); // HTTP/1.0
+	//функция чтения данных из файла
 	function read_file($file)
 	{
 	fopen($file);
@@ -16,17 +17,38 @@
 		}
 	return $ct;		
 	}
+	//функция обработки ошибок
+	function error($id)
+	{
+	if ($id == 1)
+		{
+		$error_msg = "Введите Ваше имя";
+		}
+	if ($id == 2)
+		{
+		$error_msg = "Введите текст сообщения";
+		}
+	if ($id == 3)
+		{
+		$error_msg = "Введите Ваше имя и текст сообщения";
+		}
+	if ($id == 4)
+		{
+		$error_msg = "Вы ввели неправильный пароль";
+		}
+	return $error_msg;		
+	}
 	//блок объявления переменных
 	$months_rus = array(1 => 'января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря');
 	$data_file = 'r.tmp';
-	$psswrd = $_POST['psswrd'];
 	$m = Date("n");
 	$dat = Date("d ");
 	$dat .= "$months_rus[$m]";
 	$dat .= Date(" Y");
 	$tm = Date("H:i:s");
-	$clear_button = $_POST['clear'];
+	$error_id = $_GET['error'];
 	$ct = read_file($data_file);
+	$error = error($error_id);
 ?>
 <!DOCTYPE html>
 <html lang = "ru">
@@ -39,6 +61,7 @@
 	<a href= "index.php"><h1>Добро пожаловать в гостевую книгу</h1></a>
 	<h2>Сегодня <? echo $dat ?> года. Время на Ваших часах <? echo $tm ?>.</h2>
 	<hr />
+	<h4><? echo "$error" ?></h4>
 	<p>
 	<textarea id = "txt" name = "text" rows = "10" cols = "100"><? echo "$ct" ?></textarea>
 	</p>
