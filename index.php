@@ -48,11 +48,11 @@
 		<input id = "np" maxlength = "20" size = "20" name = "name" value = "Имя пользователя"><br>
 		Введите Ваше <b>сообщение:</b><br>
 		<textarea id = "msgp" name = "msg" wrap = "virtual" cols = "100" rows = "2">Текст сообщения...</textarea><br>
-		<input id = "sbtn" value = "Send" type = "submit" name = "addmsg"></p>
+		<input id = "sbtn" value = "Отправить сообщение" type = "submit" name = "addmsg"></p>
 	</form>
 	<hr/>
 	<form action = "layout.php" method = "POST" name = "ClearForm"> 
-		<p><input id = "chbtn" value = "Clear History" type = "submit" name = "clear">
+		<p><input id = "chbtn" value = "Очистить историю" type = "submit" name = "clear">
 		Пароль: 
 		<input type = "password" maxlength = "128" size = "20" name = "psswrd" value = "php"></p>
 	</form>
