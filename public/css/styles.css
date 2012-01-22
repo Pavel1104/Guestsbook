@@ -1,0 +1,167 @@
+/* Layout ******************/
+
+html {
+	height: 100%;
+	background-color: #EEE;
+}
+
+body {
+	padding: 0;
+	margin: 0 auto;
+	width: 700px;
+	position: relative;
+	min-height: 100%;
+	font: 10pt Tahoma, Sans-Serif;
+	background: url("/img/content-bg.png") white left top repeat-y;
+	color: black;
+}
+
+h2 {
+	font-size: 125%;
+	font-weight: bold;
+	text-align: center;
+	margin: 0px 0;
+	padding: 5px 0;
+	color: #00008B;
+}
+
+h1.page-caption {
+	font-size: 125%;
+	font-weight: bold;
+	text-align: left;
+	padding: 10px;
+	margin: 0;
+	color: #00008B;
+}
+
+p {
+	padding: 0;
+	margin: 10px;
+}
+
+#header, #footer {
+	background: url("/img/title-bg.png") #4455FF left top repeat-x;
+	color: #FFF;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 80%;
+}
+
+a#logo {
+	display: block;
+	height: 54px;
+	background: url("/img/ogo.png") left top no-repeat;
+	padding-left: 60px;
+	padding-top: 10px;
+	font-size: 36px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#content {
+	overflow: hidden;
+	width: 100%;
+	padding-top: 1px;
+	padding-bottom: 175px;
+}
+
+#main {
+	float: left;
+	width: 55%;
+	margin-left: 20%;
+}
+
+#menu {
+	float: left;
+	width: 20%;
+	margin-left: -75%;
+	font-size: 80%;
+}
+
+#menu a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	background: #293499;
+	color: white;
+	border-bottom: 1px solid #FFF;
+}
+
+#menu a:hover {
+	background: #D00;
+}
+
+#sidebar {
+	float: right;
+	width: 25%;
+	font-size: 80%;
+}
+
+#sidebar .caption {
+	background: #DDE6FF;
+	font-size: 125%;
+	font-weight: bold;
+	text-align: center;
+	margin: 0px 0;
+	padding: 5px 0;
+	color: #00008B;
+}
+
+#sidebar .item {
+	margin: 5px;
+}
+
+#sidebar span.date {
+	float: left;
+	margin: 0 5px;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+#sidebar p {
+	margin: 0 5px;
+}
+
+.guestbook-messages-list-cont {
+	margin: 30px 10px;
+}
+
+.guestbook-message {
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #CCC;
+}
+
+.guestbook-message .name {
+	font-weight: bold;
+}
+
+a.guestbook-messages-clear {
+	float: right;
+	color: #CCC;
+	text-decoration: none;
+}
+
+a.guestbook-messages-clear:hover {
+	color: #555;
+	text-decoration: none;
+}
+
+.guestbook-form-cont {
+	margin: 10px;
+}
+
+.f-input {
+	width: 150px;
+}
+
+.error {
+	color: red;
+}
+

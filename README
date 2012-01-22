@@ -1,1 +1,8 @@
-Guestsbook
+Guestsbook.
+Чтобы все заработало, надо настроить virtual host так чтобы DocumentRoot смотрел в папку "public", а не в корень проекта.
+Пример:
+
+<VirtualHost *>
+    ServerName shaman_guestbook.dev
+    DocumentRoot "/Users/username/dev/shaman_guestbook/public"
+</VirtualHost>
