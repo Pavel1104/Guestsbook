@@ -2,21 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Гостевая книга</title>
-		<link rel="stylesheet" href="style/style2.css"/>
+		<link rel="stylesheet" href="style/style3.css"/>
 		<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
 	</head>
 	<body>
 		<div id="header">
 			<h1>Добро пожаловать в гостевую книгу</h1>
-			<h2>Сегодня <? echo $dat ?> года. Время на Ваших часах <? echo $tm ?>.</h2>
+		</div>
+		<div id="main">
+			<h2>Гостевая книга</h2>
+			<dl><? echo $ct ?></dl>
 		</div>
 		<div id="content">
-			<div id="main">
-				<h2>Гостевая книга</h2>
-				<dl>
-					<? echo $ct ?>
-				</dl>
-			</div>
 			<div id="sections">
 				<h2>Ссылочки</h2>
 				<ul>
@@ -50,9 +47,12 @@
 			<form action="index.php" method="post" name="clear_form"> 
 				<dl>
 					<dt>Пароль:</dt>
-					<dd><input type="password" maxlength="20" size="20" name="psswrd" value="php"></dd>
+					<dd>
+						<input type="password" maxlength="20" size="20" name="psswrd" value="php"/>
+						<input id="button_clear" value="Очистить историю" type="submit" name="clear"/>
+					</dd>
 				</dl>
-				<input id="button_clear"value="Очистить историю" type="submit" name="clear">
+				
 			</form>
 		</div>
 		<div id="footer">

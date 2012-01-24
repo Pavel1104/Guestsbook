@@ -1,0 +1,234 @@
+/* Layout ******************/
+html {
+	height:100%;
+}
+body {
+	padding:0; margin:0 auto;
+	width:80%;
+	position:relative;
+	min-height:100%;
+}
+#header {
+	width:100%;
+	height:40px;
+	z-index:10;
+}
+h1 {
+	margin:0; 
+	padding:5px;
+}
+h2 {
+	margin:0;
+	padding:0 7px;
+	height:22px;
+	vertical-align:center;
+}
+#main {
+	overflow:hidden;
+	width:70%;
+	margin: 0 30% 0 0;
+	padding-top:1px;
+	padding-bottom:181px;
+}
+#content {
+	position: absolute;
+	width:30%;
+	top:40px; Right:0;
+	margin:0 0 -32000px 0;
+	padding:1px 1px 3200px 0;
+}
+#sections {
+	width:100%;
+	margin:0;
+	padding:0;
+	display:block;
+}
+#sections ul {
+	margin:10px 0;
+	padding:0;
+}
+#sections li {
+	margin:0;
+	padding:0;
+	height:20px;
+}
+#news {
+	width:100%;
+	margin:0;
+	padding:0;
+	display:block;
+}
+#news h2, #content h2 {
+	text-align:center;
+}
+#news h3 {
+	float:left; 
+	margin:0 5px;
+}
+#news p {
+	margin:0 5px;
+}
+#search {
+	margin:0 0 5px 0;
+	padding:0;
+}
+#search p {
+	margin:0;
+	padding:0;
+}
+#search input {
+	width:10em;
+}
+#meta {
+	z-index:10;
+	position:absolute;
+	bottom:20px;
+	padding-top:1px;
+	margin:0 30% 0 0;
+	width:70%;
+	height:161px;
+	text-align: center;
+}
+#meta form {
+	margin:0;
+	padding:5px 0;
+}
+#meta form dl {
+	margin:0px;
+	padding:0px;
+	border-width:0;
+}
+#meta form dt {
+	float: left;
+	margin: 5px 5px 5px 2%;
+	padding: 0px;
+	vertical-align: top;
+	position: relative;
+}
+#meta form dd {
+	margin: 0px;
+	padding: 1px 0px;
+}
+#meta form dd input {
+	width: 30%;
+	margin:2px 0 0 20px;
+	border: 1px solid #69f;
+}
+#meta form dd textarea {
+	width:96%;
+	margin:0 2%;
+	padding:0;
+	border: 1px solid #69f;
+}
+dl {
+	margin: 0px;
+	overflow: hidden;
+	display:inline;
+}
+dt {
+	float: left;
+	margin:0px 5px;
+	padding:0;
+	clear:left;
+	display:block;
+}
+dd {
+	min-height:15px;
+	display:block;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+#button_send {
+	width:96%;
+}
+#button_clear {
+	text-align: center;
+}
+#footer {
+	z-index:15;
+	position:absolute; 
+	bottom:0;
+	height:20px; 
+	width:100%;
+	padding:0;
+	text-align:center;
+}
+/* Fonts *******************/
+body {
+	font:11pt Tahoma, Sans-Serif;
+}
+h1 {
+	font-size:170%;
+	letter-spacing:1px;
+	text-align:center;
+}
+h2 {
+	font-size:125%;
+	text-align:left;
+}
+#sections, #news {
+	font-size:80%;
+}
+#news h3 {
+	font-size:90%; font-weight:bold;
+}
+#meta {
+	font-size:100%;
+}
+#footer {
+	font-size:70%;
+}
+#search input, #search button, #meta input, #meta button {
+	font-size:90%;
+}
+/* Colors ******************/
+#header, #footer {
+	background:#45F;
+	color:white;
+}
+h2 {
+	background:darkblue;
+	color:#DEF;
+}
+#meta form {
+	border-top: 1px solid #69F;
+	border-left: 1px solid #69F;
+	border-right: 1px solid #69F;
+	background:#DDE6FF;
+	color:black;
+}
+#sections li a {
+	background:#293499;
+	color:white;
+	border-color:white;
+}
+#sections li a:hover {
+	background:#D00;
+}
+#search {
+	color:white;
+}
+/* Misc ********************/
+#header {
+	background: url(title-bg.png) left top repeat-x;
+}
+body {
+	background:#EE0;
+	color:black;
+}
+html {
+	background: #EEE;
+}
+#content {
+	background:#EEF;
+}
+#sections ul {
+	list-style:none;
+}
+#sections li a {
+	display:block;
+	margin:5px 0; padding:2px 5px;
+	border-style:solid; border-width:1px 0;
+	text-decoration:none;
+}
