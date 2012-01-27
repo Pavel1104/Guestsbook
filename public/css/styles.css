@@ -51,6 +51,7 @@ p {
 	padding: 10px 0;
 	text-align: center;
 	font-size: 80%;
+	height:12px;
 }
 
 a#logo {
@@ -68,7 +69,7 @@ a#logo {
 	overflow: hidden;
 	width: 100%;
 	padding-top: 1px;
-	padding-bottom: 175px;
+	padding-bottom: 35px;
 }
 
 #main {
@@ -129,7 +130,7 @@ a#logo {
 }
 
 .guestbook-messages-list-cont {
-	margin: 30px 10px;
+	margin: 10px;
 }
 
 .guestbook-message {

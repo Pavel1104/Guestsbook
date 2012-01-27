@@ -6,3 +6,5 @@ Guestsbook.
     ServerName shaman_guestbook.dev
     DocumentRoot "/Users/username/dev/shaman_guestbook/public"
 </VirtualHost>
+Чтобы заработала база данных необходимо в файле index.php в блоке объявления переменных указать хост, пользователя и пароль для доступа к базе данных.
+В разделе "База данных" есть кнопочки для создания таблиц.

@@ -9,12 +9,13 @@ $page = array(
 	"content" => '<p>Тут вы можете написать сообщение</p>'
 );
 
-$data_file = DIR_PUBLIC . "/data/guestbook.txt";
-
 if (@$_GET['t'] === "clear") // удаляем все записи
 {
-	fopen($data_file, "w");
-	fclose($data_file);
+	mysql_connect(HOST, "user", "123") or die (mysql_error ());
+	mysql_select_db("guestbook") or die(mysql_error());
+	$strSQL = "TRUNCATE TABLE guest"; 
+	mysql_query($strSQL) or die (mysql_error());
+	mysql_close();
 	redirect_to("/?s=guestbook");
 }
 
@@ -22,6 +23,8 @@ if (@$_GET['t'] === "add") // добавляем новую запись
 {
 	$name = trim(@$_POST['name']);
 	$text = trim(@$_POST['text']);
+	$data = date("Y-m-d");
+	$time = date("H:i:s");
 
 	$errors = array();
 	if (empty($name))
@@ -35,26 +38,28 @@ if (@$_GET['t'] === "add") // добавляем новую запись
 	}
 	else
 	{
-		$record = $name . "|" . $text . "\n";
-		file_put_contents($data_file, $record, FILE_APPEND);
+		mysql_connect(HOST, USER, PASSWORD) or die (mysql_error ());
+		mysql_select_db("guestbook") or die(mysql_error());
+		$strSQL = "INSERT INTO guest(name,message,data,time) VALUES('$name','$text','$data','$time')"; 
+		mysql_query($strSQL) or die (mysql_error());
+		mysql_close();
 		redirect_to("/?s=guestbook");
 	}
 }
 
 if (empty($_GET['t'])) // отображаем список записей
 {
-	$records = @file($data_file);
-	$messages = array();
-
-	if (@$records && count($records) > 0)
-	{
-		foreach ($records as $record)
-		{
-			$record_arr = explode("|", $record);
-			$messages[] = array(
-				"name" => @$record_arr[0],
-				"text" => @$record_arr[1],
-			);
-		}
+	mysql_connect(HOST, USER, PASSWORD) or die (mysql_error ());
+	mysql_select_db("guestbook") or die(mysql_error());
+	$strSQL = "SELECT `data`, `time`, `name`, `message` FROM `guest` ORDER BY `id` DESC";
+	$rs = mysql_query($strSQL);
+	while($row = mysql_fetch_array($rs, MYSQL_ASSOC)) {
+		$messages[] = array(
+			"name" => @$row['name'],
+			"text" => @$row['message'],
+			"data" => @$row['data'],
+			"time" => @$row['time']
+		);
 	}
+	mysql_close();
 }

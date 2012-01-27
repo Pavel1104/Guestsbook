@@ -6,7 +6,7 @@
 	<?php if (@$messages && count($messages) > 0) { ?>
 		<?php foreach ($messages as $item) { ?>
 			<div class="guestbook-message">
-				<span class="name"><?= $item['name'] ?></span> написал(а):<br/>
+				<span class="name"><?= $item['name'] ?></span> написал(а) <?= $item['data']?> в <?= $item['time'] ?>:<br/>
 				<span class="text"><?= $item['text'] ?></span>
 			</div>
 		<?php } ?>
@@ -26,9 +26,9 @@
 
 	<form action="/?s=guestbook&amp;t=add" method="post">
 		Имя:<br/>
-		<input type="text" name="name" value="<?= @$_POST['name'] ?>" class="f-input" /><br/>
+		<input type="text" name="name" value="" class="f-input" /><br/>
 		Сообщение:<br/>
-		<input type="text" name="text" value="<?= @$_POST['text'] ?>" class="f-input" /><br/>
+		<input type="text" name="text" value="" class="f-input" /><br/>
 		<br/>
 		<input type="submit" value="Отправить" />
 	</form>
